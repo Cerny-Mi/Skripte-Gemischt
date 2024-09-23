@@ -1,0 +1,26 @@
+//Tracking code made by: Eduardo Lundgren 
+https://editor.p5js.org/MichelleCerny/sketches/beQ1JybLOs
+
+ tracking - A modern approach for Computer Vision on the web.
+ * @author Eduardo Lundgren <edu@rdo.io>
+ * @version v1.1.2
+ * @link http://trackingjs.com
+ * @license BSD
+
+
+//Matter.js-Tutorials:
+https://www.youtube.com/watch?v=W-ou_sVlTWk
+
+//Kameraverwendung:
+https://p5js.org/examples/dom-video-capture.html
+https://editor.p5js.org/ach549@nyu.edu/sketches/S1u1JKeT7
+
+//Kameraspiegelung:
+https://editor.p5js.org/creativecoding/sketches/0JBTBmvGb
+
+//Keyboard input:
+https://p5js.org/examples/input-keyboard.html
+
+//Text in p5:
+https://p5js.org/examples/typography-words.html
+

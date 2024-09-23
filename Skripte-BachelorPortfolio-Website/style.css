@@ -1,0 +1,362 @@
+
+html {
+    background: #e4e4e4;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    
+    background-color: white;
+ 
+}
+
+body {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family:  Trebuchet MS, sans-serif;
+    
+    
+    font-size: 1em;
+    margin:0 auto;
+    
+    /*codejail
+    
+   padding: 0.5em 2em 3em;
+    
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    */
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    /*font-weight: 600;*/
+    line-height: 1.3;
+}
+
+h1 {
+    
+    display: inline;
+    text-transform: uppercase; /* "capitalize" ist nur für die anfangsbuchstaben. "uppercase" ist allcaps*/
+    font-size: 2rem;
+}
+
+
+
+/*//////////////////////header start*/
+
+
+.newhead{
+    position:fixed;
+    width:100%;
+    top:0rem;
+    left:0;
+    height: 4rem;
+    
+}
+
+
+.header-grid{
+     display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*anzahl an auto steht für anzahl an columns??*/
+   justify-items: center;
+    
+    
+    margin: 0 0 0 2;
+    
+     padding: 1rem 4em 1em;
+}
+
+
+.header-grid-item{
+    
+
+    font-size: 0.9em;
+   
+    /*
+    padding: 0.5em 2em 3em;*/
+    text-transform: capitalize;
+    
+}
+
+
+
+#menu{
+    transform: rotate(90deg);
+    /*is basically calling js inside of cs!*/
+    
+    
+}
+
+.icons{
+        /*
+    background-color: rebeccapurple;*/
+    height: 2rem;
+}
+
+
+/*//////////////////////header end*/
+
+
+.contentunderheader{
+     padding: 4rem 7rem 3rem;
+    
+    /*bestimmt begrenzung des inhalts */
+    
+}
+
+   
+a { /*steht für die art, die for "href" kommt*/
+    
+    text-decoration: none;
+    
+    color: black;
+    
+}
+
+
+/*for testing out flex option*/
+/*
+
+
+*/
+
+
+
+/*//////////////////////grids start*/
+.grid-container {
+    
+    /*Der Grid-Master. Der Oberbabo. */
+    margin-top: 4rem ;
+  display:grid;
+  grid-template-columns:auto auto auto ; 
+    grid-gap: 0.5rem;
+  background-color: white;
+ background: transparent;
+    
+    
+    
+   justify-items: center;
+    
+    
+}
+
+.grid-item{
+    
+    
+    /*max-height: 500px;*/
+}
+
+
+
+.grid2{
+    
+  grid-template-columns:0.8fr 0.8fr 0.8fr 1.2fr ;
+    
+}
+
+
+img, video {
+    
+    /*code jail:
+    
+    background-color: #fafafa;
+    
+    */
+      max-height: 100%;
+    max-width: 100%; 
+    
+     
+    border-style: solid solid solid solid; /*clockwise: up, right, down, left*/
+    border-width: 1px;
+    border-color:lightgray;
+    border-radius: 5px; /*looks sleeker with some rounded corners ^^*/
+}
+
+
+
+.gridtext{
+    
+   /* wenn ein elemente mehrere klassen besitzt,
+    dann überschreibt die klasse die im css als letztere/unteres vorkommt die vorher gesetzten werte, wenn es sich um dieselben attribute handeln 
+    
+    z.B. wenn ich oben sage "columns sind so und so" und das weiter unten nochmal sage, dann gilt das weiter unten!
+    
+    
+    */
+     
+  grid-template-columns: 1.7fr 1fr  ; 
+    grid-gap: 1rem;
+    
+    
+    
+    
+}
+
+.grid4er{
+    
+  grid-template-columns:1fr 1fr 1fr 1fr ; 
+    
+    
+}
+
+.grid5er{
+    grid-template-columns:1fr 1fr 0.1fr 1fr 1fr;
+    
+   justify-items: space-between;
+    
+}
+
+.grid1er{
+    
+   grid-template-columns:0.2fr 1fr 0.2fr;   
+}
+
+
+
+
+
+.gridvid{ /*only if the vid is supposed to be HUGE, otherwise use grid1er*/
+    
+  grid-template-columns:auto;
+    padding:0;
+    
+}
+
+.infotexte{
+    font-size: 0.8rem;
+   
+    line-height: 1.3rem;
+    max-width: 600px;   
+    margin-bottom: 0; padding-bottom: 0;
+}
+
+
+
+
+
+p, video{
+    
+    padding: 0;
+    margin:0;
+}
+
+/*//////////////////////grids end*/
+
+.untertitel{
+    
+    
+    
+    color: darkgrey;
+    
+    
+    font-size: 0.65rem;
+    line-height: 1.3rem;
+    margin-top: 0.5rem;
+    
+    
+    /*linie daneben*/
+    padding-left: 0.3rem; /*innenpuffer, der text von line trennt!*/
+    text-align: left;
+    border-left-style: solid;
+    border-width: 1px;
+    
+    
+    }
+
+
+
+.mainline{
+    
+    
+    margin-top: 3rem;
+    padding-left: 0.5rem; /*innenpuffer, der text von line trennt!*/
+    border-style: none none none groove; /*clockwise: up, right, down, left*/
+    border-width: 1px;
+    text-align: left;
+ 
+    
+}
+
+
+.vita--untis{
+    
+    margin:0 0 1.5rem 0 ;
+    padding: 0;
+    line-height: 1.3rem;
+    
+    border-style: none none none none;
+}
+
+
+
+
+
+.whiteandopacity{
+    
+    background-color:white;
+    opacity: 90%; 
+}
+
+/*wie zieht man in css ne linie? ... ich mach erstmal ne box, die so dünn wie ne linie werden soll */
+
+
+
+
+.backbutton{
+    text-align: center;
+    
+    
+    
+}
+
+
+.icons{
+    
+    background-color: transparent;
+    border-style: none none none none;
+    max-width: 30px; max-height: 30px;
+}
+
+
+footer{
+    
+    
+    position:fixed;
+    width:100%;
+    bottom:0rem;
+    left:0;
+    height: 1rem;
+     justify-items: center;
+    
+}
+
+
+
+
+/*----------------Projekte und Hovers--------
+--
+remember: 
+# = id
+. = class
+
+
+*/
+
+.hoverpic:hover{
+    
+    opacity:50%;
+    
+}
+
+
+.icons:hover, .backbutton:hover{
+    
+    background-color:#fafafa; 
+    opacity: 100%;
+}
+
+
+ 
+
+/*---------------------------------document end-------------------------------------*/
